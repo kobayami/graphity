@@ -1,0 +1,32 @@
+# Maven
+target/
+
+# IDE
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+.vscode/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cursor
+.cursor/
+
+# Internal-only documentation. Lives on the private kaufco/main branch only;
+# must never reach the public releases/kobayami branch. Ignoring it here is a
+# belt-and-braces guard against accidental `git add internal/` on releases.
+internal/
+
+# Benchmark results
+graphity-benchmarks/results/
+
+# Local benchmark datasets (downloaded, not versioned)
+graphity-benchmarks/datasets/*
+!graphity-benchmarks/datasets/README.md
+!graphity-benchmarks/datasets/download-datasets.sh
