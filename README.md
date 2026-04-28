@@ -129,7 +129,7 @@ Selected results at n = 100 000, measured on an AMD Ryzen 9 9950X with OpenJDK 2
 | GNP_DENSE         | 4.00 B   | 219.51 B (54.9×) | 108.63 B (27.2×) | 2.07 B (0.52×)   |
 | TREE              | 4.00 B   | 208.34 B (52.1×) | 137.73 B (34.4×) | 1.86 B (0.46×)   |
 
-For full results — additional algorithms (`BackEdges`, `EdgeTypes`), other graph sizes (n = 10⁴, 10⁶), allocation counts, shuffled variants, confidence-interval analysis — **TBD:** a public-facing benchmark report is planned for the 1.0.0 release.
+For full results — all algorithms (`Build`, `Sccs`, `Wccs`, `Ccs`, `TopOrder`, `TopOrderAndLevels`, `BackEdges`, `EdgeTypes`), additional graph sizes, allocation counts per operation, shuffled variants, and confidence-interval analysis — see the v1.0 baseline report at [`graphity-benchmarks/baselines/1.0.md`](graphity-benchmarks/baselines/1.0.md).
 
 ## Algorithms
 
@@ -161,7 +161,7 @@ For custom traversals, subclass `DfsTraverser` (or `BiAdjacentDfsTraverser` for 
 This README is the primary user-facing documentation for 1.0 and 1.1; the API reference is a Javadoc site.
 
 - **API reference (Javadoc):** [kobayami.github.io/graphity](https://kobayami.github.io/graphity/). Currently tracks `main`; from 1.0.0 onward each release tag updates the published Javadoc.
-- **Benchmark interpretation:** **TBD** — a per-shape, per-algorithm comparison against JGraphT, Guava and WebGraph is planned with the 1.0.0 release.
+- **Benchmark baseline (v1.0):** [`graphity-benchmarks/baselines/1.0.md`](graphity-benchmarks/baselines/1.0.md) — per-shape, per-algorithm performance, memory and allocation tables against JGraphT, Guava and WebGraph, with confidence-interval data.
 
 ## Building, testing, and benchmarking from source
 
